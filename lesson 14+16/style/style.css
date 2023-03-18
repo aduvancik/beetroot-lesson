@@ -5,21 +5,21 @@
   padding: 0 100px 90px 100px;
   position: relative;
   max-width: 1519.2px;
-  height: 2000px;
 }
 
 .grid-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 385px 1fr;
+  grid-template-rows: 1fr;
   padding-top: 144px;
   gap: 30px;
 }
 
 .aside-wrapp {
   position: sticky;
-  top: 0px;
+  top: 180px;
   height: -moz-max-content;
   height: max-content;
-  border: 1px black solid;
 }
 
 .header {
@@ -115,7 +115,7 @@
 }
 
 .aside {
-  padding: 10px 0px 0px 10px;
+  padding: 0px 0px 0px 10px;
   display: flex;
   flex-direction: column;
   gap: 60px;
