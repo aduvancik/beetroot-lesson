@@ -8,7 +8,6 @@
   transform: rotate(90deg);
   transition: all 1s ease 0s;
 }
-
 .wrapper:hover {
   transform: rotate(0);
 }
@@ -16,12 +15,10 @@
 .result {
   margin: 0px 0px 150px 0px;
 }
-
 .result span {
   color: #1076c2;
   font-weight: 900;
 }
-
 .result p:first-child {
   float: right;
   font-style: normal;
@@ -30,7 +27,6 @@
   line-height: 36px;
   color: #818181;
 }
-
 .result p:last-child {
   float: right;
   font-family: "Poppins";
@@ -65,7 +61,6 @@
   justify-content: center;
   color: rgb(41, 168, 255);
 }
-
 .grid-top-item:hover {
   background: #222326;
 }
@@ -90,7 +85,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .grid-main-item:hover {
   background: #222326;
 }
@@ -107,7 +101,6 @@
   background: #005db2;
   color: #309afb;
 }
-
 .action:hover {
   background: #05417a;
 }
@@ -117,8 +110,7 @@
   color: #a5a5a5;
   font-weight: normal;
 }
-
 .gray:hover {
   background: #4a4747;
   color: #807a7a;
-}
+}/*# sourceMappingURL=style.css.map */
