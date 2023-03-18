@@ -1,0 +1,147 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px 90px 100px;
+  position: relative;
+  max-width: 1519.2px;
+  // position: relative;
+  height: 2000px;
+}
+
+.grid-container {
+  // display: grid;
+  // grid-template-columns: 385px 1fr;
+  // grid-template-rows: 1fr;
+  display: flex;
+  padding-top: calc(84px + 60px);
+  gap: 30px;
+  // position: relative;
+  // height: 2000px;
+  // overflow: hidden;
+}
+.aside-wrapp {
+  // height: 100vh;
+  position: sticky;
+  top: 0px;
+  height: max-content;
+  border: 1px black solid;
+}
+
+.header {
+  display: flex;
+  max-width: 1519.2px;
+  justify-content: space-between;
+  gap: calc(1205px - 1182px + 600px);
+  padding: 26px 120px 15px 120px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 2;
+
+  &__eng {
+    font-family: "Tourney";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  &__doc {
+    font-family: "Staatliches";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.title {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.main {
+  // position: sticky;
+  top: 20px;
+  max-width: 1205px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  background: fixed;
+  background-image: url(./img/bg-picture.jpg);
+  background-repeat: no-repeat;
+  background-position: right 100px top 160px;
+  //  height: 100%;
+  //  overflow: auto;
+}
+
+.block-text {
+  hr {
+    width: 100px;
+    height: 8px;
+    background: #000000;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+  }
+}
+
+.title-p {
+  display: flex;
+  gap: 10px;
+  margin: 0px 0px 40px 0px;
+
+  h2 {
+    font-family: "Francois One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .chapter {
+    font-family: "Farro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.teg {
+  background-color: rgb(218, 218, 218);
+}
+
+.aside {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  // position: sticky;
+  // top: 95px;
+  z-index: 1;
+
+  &__text-line {
+    max-width: max-content;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 0px 0px 10px 0px;
+  }
+}
