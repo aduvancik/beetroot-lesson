@@ -1,5 +1,37 @@
-let block = document.querySelector(".block1");
+const menuBody = document.querySelector('.menu');
 
+document.addEventListener('click', menu);
+
+function menu(event) {
+  if(event.target.closest('.menu__button')) {
+    menuBody.classList.toggle('_active');
+  }
+  if (!event.target.closest('.menu')){
+    menuBody.classList.remove('_active');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// function consolee(event) {
+//   console.log(event.type);
+//   console.log(event.target);
+//   console.log(event.currentTarget);
+//   console.log(event.clientX);
+//   console.log(event.clientY);
+// };
+
+// block.addEventListener('click', consolee);
+// block.addEventListener('mouseenter', consolee);
 
 
 

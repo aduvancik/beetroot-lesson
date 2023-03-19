@@ -8,32 +8,17 @@
   font-weight: 900;
   color: #1f1f1f;
   background: rgb(181, 189, 200);
-  background: linear-gradient(to bottom,
-      rgb(181, 189, 200) 0%,
-      rgb(130, 140, 149) 36%,
-      rgb(40, 52, 59) 100%);
-
+  background: linear-gradient(to bottom, rgb(181, 189, 200) 0%, rgb(130, 140, 149) 36%, rgb(40, 52, 59) 100%);
   box-shadow: 16px 16px 10px 4px rgba(0, 0, 0, 0.75);
   border: 2px #8c8c8c solid;
   transition: all 0.9s ease 0s;
   cursor: pointer;
 }
-
 .bth:hover {
   transform: scale(1.02);
   color: white;
-  background: rgb(76, 76, 76);
-  background: linear-gradient(135deg,
-      rgb(76, 76, 76) 0%,
-      rgb(89, 89, 89) 12%,
-      rgb(102, 102, 102) 25%,
-      rgb(71, 71, 71) 39%,
-      rgb(44, 44, 44) 50%,
-      rgb(0, 0, 0) 58%,
-      rgb(17, 17, 17) 60%,
-      rgb(43, 43, 43) 76%,
-      rgb(28, 28, 28) 91%,
-      rgb(19, 19, 19) 100%);
+  background: rgb(76, 76, 76); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgb(76, 76, 76) 0%, rgb(89, 89, 89) 12%, rgb(102, 102, 102) 25%, rgb(71, 71, 71) 39%, rgb(44, 44, 44) 50%, rgb(0, 0, 0) 58%, rgb(17, 17, 17) 60%, rgb(43, 43, 43) 76%, rgb(28, 28, 28) 91%, rgb(19, 19, 19) 100%);
 }
 
 .wrapper {
@@ -70,7 +55,6 @@
   background-color: #fff;
   z-index: 2;
 }
-
 .header__eng {
   font-family: "Tourney";
   font-weight: 600;
@@ -79,7 +63,6 @@
   text-align: center;
   letter-spacing: 0.04em;
 }
-
 .header__doc {
   font-family: "Staatliches";
   font-weight: 400;
@@ -129,7 +112,6 @@ hr {
   gap: 10px;
   margin: 0px 0px 40px 0px;
 }
-
 .title-p h2 {
   font-family: "Francois One";
   font-style: normal;
@@ -139,7 +121,6 @@ hr {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-
 .title-p .chapter {
   font-family: "Farro";
   font-style: normal;
@@ -164,7 +145,6 @@ hr {
   gap: 60px;
   z-index: 1;
 }
-
 .aside__text-line {
   max-width: -moz-max-content;
   max-width: max-content;
@@ -186,26 +166,21 @@ hr {
   transform: scale(0);
   transition: all 1s ease 0s;
 }
-
 .using__title {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 .using__title hr {
   margin: 0;
 }
-
 .using__title {
   display: flex;
   justify-content: space-between;
 }
-
 .using .close {
   cursor: pointer;
 }
-
 .using .close svg {
   width: 50px;
 }
@@ -228,11 +203,9 @@ hr {
   justify-content: center;
   transition: all 1s ease 0s;
 }
-
 .carte-block:hover {
   transform: rotateY(180deg);
 }
-
 .carte-block:hover .carte-block-before {
   transform: rotateY(0);
 }
@@ -248,7 +221,6 @@ hr {
   background-color: transparent;
   perspective: 1000px;
 }
-
 .carte-wrapper:hover .carte-iner {
   transform: rotateY(180deg);
 }
@@ -276,6 +248,4 @@ hr {
   top: 0;
   z-index: -1;
   transform: rotateY(180deg);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
