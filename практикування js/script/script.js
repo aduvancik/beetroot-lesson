@@ -1,9 +1,9 @@
 const menuBody = document.querySelector('.menu');
+const xy = document.querySelector('xy');
 
-document.addEventListener('mousemove', menu);
+document.addEventListener('click', menu);
 
 function menu(event) {
-  menuBody.innerHTML = `${menuBody.innerHTML}x - ${event.clientX} <br />y - ${event.clientY}`;
   if(event.target.closest('.menu__button')) {
     menuBody.classList.toggle('_active');
   }
@@ -16,9 +16,11 @@ for (let i = 0; i < link.length; i++) {
   
 link[i].addEventListener('click',function (event)
 {
+  // xy.innerHTML = `x - ${clientX} y - ${clientY}`;
+  event.preventDefault();
   link[i].style = "color : red;background : white;";
   // event.preventDefault();
-}, {"passive": true });
+}, {"passive": false });
 };
 
 
@@ -26,7 +28,7 @@ link[i].addEventListener('click',function (event)
 
 
 // mausedown / museup
-// mauseover
+// mauseover вспливає
 // mousemove
 // contextmenu
 

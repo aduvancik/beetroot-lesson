@@ -1,0 +1,31 @@
+element.onclick = function () {};
+///
+function name(){};
+element.onclick = name;
+///
+element.addEventListener("click" , function() {дія1});
+element.addEventListener("click" , function() {дія2});
+///
+element.addEventListener("click" , name);
+забрати прослушку - element.removeEventListener("click",name) в функцію name
+///
+const optoins = {
+"capture": false,
+"once": true,якщо тру то видаляєтся обробчик після спрацювання
+"passive":false
+}
+///
+в фунцію оброботчика передати event
+event.type-тип собития
+event.target - обєт на якому спацював оброботчик
+event.cerrentTarget - обєкт на який навішано оброботчик
+event.ClientX - координати х
+///
+event.stopProragation();
+зупиняє всплития
+///
+button.forEach(buttonItem => {buttonItem.addEvenListener("click",name)});тут прослушка
+///
+buttonParents.addEventListener("click",function(event){
+if(event.target.closest('.button')){name()
+}});
