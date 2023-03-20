@@ -1,19 +1,37 @@
 const menuBody = document.querySelector('.menu');
 
-document.addEventListener('click', menu);
+document.addEventListener('mousemove', menu);
 
 function menu(event) {
+  menuBody.innerHTML = `${menuBody.innerHTML}x - ${event.clientX} <br />y - ${event.clientY}`;
   if(event.target.closest('.menu__button')) {
     menuBody.classList.toggle('_active');
   }
   if (!event.target.closest('.menu')){
     menuBody.classList.remove('_active');
   }
-}
+};
+const link = document.querySelectorAll('.menu__link');
+for (let i = 0; i < link.length; i++) {
+  
+link[i].addEventListener('click',function (event)
+{
+  link[i].style = "color : red;background : white;";
+  // event.preventDefault();
+}, {"passive": true });
+};
 
 
 
 
+
+// mausedown / museup
+// mauseover
+// mousemove
+// contextmenu
+
+// click
+// dblclock
 
 
 
