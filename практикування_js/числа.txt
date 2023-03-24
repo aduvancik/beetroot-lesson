@@ -1,0 +1,4 @@
+let num = parseInt('12px');
+alert(num); // выведет 12
+let num = parseFloat('12.5px');
+alert(num); // выведет 12.5
