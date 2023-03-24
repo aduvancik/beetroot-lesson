@@ -1,5 +1,57 @@
-let block = document.querySelector(".block1");
+const menuBody = document.querySelector('.menu');
+const xy = document.querySelector('xy');
 
+document.addEventListener('click', menu);
+
+function menu(event) {
+  if(event.target.closest('.menu__button')) {
+    menuBody.classList.toggle('_active');
+  }
+  if (!event.target.closest('.menu')){
+    menuBody.classList.remove('_active');
+  }
+};
+const link = document.querySelectorAll('.menu__link');
+for (let i = 0; i < link.length; i++) {
+  
+link[i].addEventListener('click',function (event)
+{
+  // xy.innerHTML = `x - ${clientX} y - ${clientY}`;
+  event.preventDefault();
+  link[i].style = "color : red;background : white;";
+  // event.preventDefault();
+}, {"passive": false });
+};
+
+
+
+
+
+// mausedown / museup
+// mauseover вспливає
+// mousemove
+// contextmenu
+
+// click
+// dblclock
+
+
+
+
+
+
+
+
+// function consolee(event) {
+//   console.log(event.type);
+//   console.log(event.target);
+//   console.log(event.currentTarget);
+//   console.log(event.clientX);
+//   console.log(event.clientY);
+// };
+
+// block.addEventListener('click', consolee);
+// block.addEventListener('mouseenter', consolee);
 
 
 
