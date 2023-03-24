@@ -39,6 +39,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #7690a8;
+  margin: 0px 0px 15px 0px;
 }
 .main__title h2 {
   font-family: "Nunito Sans";
@@ -50,9 +51,28 @@ body {
 }
 .main__grid-conteiner {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 370px));
+  gap: 30px;
 }
 .main__carte {
+  border-radius: 8px;
+  border: 1px solid #e5eaf4;
   font-family: "Roboto";
+  padding: 40px 40px 40px 40px;
+  min-height: 370px;
+}
+.main__carte:hover svg {
+  fill: rgb(225, 244, 245);
+  stroke: rgb(82, 194, 157);
+}
+.main__c-logo {
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main__c-title {
   font-weight: 400;
@@ -60,21 +80,42 @@ body {
   line-height: 21px;
   letter-spacing: 0.2px;
   color: #16133d;
+  margin: 30px 0px 15px 0px;
 }
 .main__c-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  color: #16133D;
+  color: #16133d;
+  margin: 15px 0 30px 0;
 }
 .main__learn {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-  color: #3DB370;
+  color: #3db370;
 }
 
-footer {
-  height: 20px;
-  background-color: #16133d;
+.footer {
+  background: #16133d;
+  padding: 0 0 40px 135px;
+}
+.footer__icons {
+  display: flex;
+  gap: 10px;
+}
+.footer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #efeef3;
+  border-radius: 5px;
+}
+.footer .frehand-logo {
+  padding: 40px 0 40px;
+}
+.footer .frehand-logo p {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
