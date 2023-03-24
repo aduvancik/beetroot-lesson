@@ -12,7 +12,7 @@ element.addEventListener("click" , name);
 const optoins = {
 "capture": false,
 "once": true,якщо тру то видаляєтся обробчик після спрацювання
-"passive":false
+"passive":false/забирає задержку для дій за замовчуванням браузера
 }
 ///
 в фунцію оброботчика передати event
