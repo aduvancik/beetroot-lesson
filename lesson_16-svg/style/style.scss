@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 0 0 0 135px;
+  border-bottom: 1px solid #efeef3;
+}
+
+.frehand-logo {
+  display: flex;
+  gap: 12.5px;
+  padding: 32px 0;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  p {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: #16133d;
+  }
+}
+
+.main {
+  padding: 100px 135px;
+  flex: 1 1 auto;
+  &__content {
+  }
+
+  &__title {
+    margin: 0px 0px 40px 0px;
+
+    p {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: #7690a8;
+    }
+
+    h2 {
+      font-family: "Nunito Sans";
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 52px;
+      letter-spacing: 0.2px;
+      color: #16133d;
+    }
+  }
+
+  &__grid-conteiner {
+    display: grid;
+  }
+
+  &__carte {
+    font-family: "Roboto";
+  }
+
+  &__c-logo {
+  }
+
+  &__c-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: #16133d;
+  }
+
+  &__c-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #16133D;
+  }
+
+  &__learn {
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #3DB370;
+  }
+}
+footer {
+  height: 20px;
+  background-color: #16133d;
+}
