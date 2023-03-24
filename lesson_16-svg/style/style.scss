@@ -1,4 +1,4 @@
-body {
+.body {
   display: flex;
   flex-direction: column;
 }
@@ -70,7 +70,6 @@ body {
     min-height: 370px;
 
     &:hover svg{
-     fill: rgba(225, 244, 245, 1);
      stroke: rgba(82, 194, 157, 1);
     }
   }

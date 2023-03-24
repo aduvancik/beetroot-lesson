@@ -1,4 +1,4 @@
-body {
+.body {
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +62,6 @@ body {
   min-height: 370px;
 }
 .main__carte:hover svg {
-  fill: rgb(225, 244, 245);
   stroke: rgb(82, 194, 157);
 }
 .main__c-logo {
