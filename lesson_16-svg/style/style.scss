@@ -1,0 +1,148 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 0 0 0 135px;
+  border-bottom: 1px solid #efeef3;
+}
+
+.frehand-logo {
+  display: flex;
+  gap: 12.5px;
+  padding: 32px 0;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  p {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: #16133d;
+  }
+}
+
+.main {
+  padding: 100px 135px;
+  flex: 1 1 auto;
+
+  &__title {
+    margin: 0px 0px 40px 0px;
+
+    p {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: #7690a8;
+
+      margin: 0px 0px 15px 0px;
+    }
+
+    h2 {
+      font-family: "Nunito Sans";
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 52px;
+      letter-spacing: 0.2px;
+      color: #16133d;
+    }
+  }
+
+  &__grid-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 370px));
+    gap: 30px;
+  }
+
+  &__carte {
+    border-radius: 8px;
+    border: 1px solid #e5eaf4;
+
+    font-family: "Roboto";
+    padding: 40px 40px 40px 40px;
+    min-height: 370px;
+
+    &:hover{
+      transition: all .5s ease 0s;
+      border: 1px solid #3DB370;
+      & svg{
+     stroke: rgba(82, 194, 157, 1);
+      }
+    }
+  }
+
+  &__c-logo {
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__c-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: #16133d;
+
+    margin: 30px 0px 15px 0px;
+  }
+
+  &__c-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #16133d;
+
+    margin: 15px 0 30px 0;
+  }
+
+  &__learn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3db370;
+  }
+}
+
+.footer {
+  background: #16133d;
+  padding: 0 0 40px 135px;
+
+  &__icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    background: #efeef3;
+    border-radius: 5px;
+  }
+
+  .frehand-logo {
+    padding: 40px 0 40px;
+
+    p {
+      color: #ffffff;
+    }
+  }
+}
