@@ -69,8 +69,12 @@
     padding: 40px 40px 40px 40px;
     min-height: 370px;
 
-    &:hover svg{
+    &:hover{
+      transition: all .5s ease 0s;
+      border: 1px solid #3DB370;
+      & svg{
      stroke: rgba(82, 194, 157, 1);
+      }
     }
   }
 
