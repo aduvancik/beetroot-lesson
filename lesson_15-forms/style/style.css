@@ -1,0 +1,128 @@
+.flex-column, .city, .country, .e-mail, .last-name, .first-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  border: 1px black solid;
+  border-radius: 6px;
+  padding: 35px 34px 20px 36px;
+  margin: 100px auto;
+  max-width: 570px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "Fname Lname" "emeil emeil" "male male" "country city" "button button" "foot foot";
+}
+.form label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+.form input {
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  min-height: 38px;
+  padding: 0px 10px;
+  margin: 7px 0px 0px 0px;
+}
+
+.title {
+  grid-area: title;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1c1c1c;
+}
+
+.first-name {
+  grid-area: Fname;
+}
+
+.last-name {
+  grid-area: Lname;
+}
+
+.e-mail {
+  grid-area: emeil;
+}
+.e-mail p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+  margin: 7px 0px 0px 0px;
+}
+
+.male {
+  grid-area: male;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.male input {
+  display: inline-block;
+}
+.male .fmale {
+  display: flex;
+  align-items: center;
+}
+
+.country {
+  grid-area: country;
+}
+
+.city {
+  grid-area: city;
+}
+
+.foot {
+  grid-area: foot;
+  max-width: 410px;
+  text-align: center;
+  margin: 0px auto;
+}
+.foot p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+.foot span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #007bff;
+}
+
+.button {
+  grid-area: button;
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  padding: 8px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
