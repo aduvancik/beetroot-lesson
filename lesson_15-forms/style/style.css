@@ -1,19 +1,43 @@
-.flex-column, .city, .country, .e-mail, .last-name, .first-name {
+.wrapper {
+  background: #e5e5e5;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.flex-column,
+.form .city,
+.form .country,
+.form .e-mail,
+.form .last-name,
+.form .first-name {
   display: flex;
   flex-direction: column;
 }
 
-.form {
-  border: 1px black solid;
+.wrapper-form {
+  background-color: rgb(255, 255, 255);
   border-radius: 6px;
-  padding: 35px 34px 20px 36px;
-  margin: 100px auto;
+  padding: 35px 34px 0 36px;
+  margin: 0 auto;
   max-width: 570px;
+}
+
+.form {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 20px;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "title title" "Fname Lname" "emeil emeil" "male male" "country city" "button button" "foot foot";
+  grid-template-areas:
+    "title title"
+    "Fname Lname"
+    "emeil emeil"
+    "male male"
+    "country city"
+    "button button"
+    "foot foot";
 }
+
 .form label {
   font-family: "Roboto";
   font-style: normal;
@@ -23,7 +47,8 @@
   letter-spacing: -0.2px;
   color: #545454;
 }
-.form input {
+
+.form input:not(.male input) {
   border: 1px solid #e4e4e4;
   border-radius: 6px;
   min-height: 38px;
@@ -31,7 +56,12 @@
   margin: 7px 0px 0px 0px;
 }
 
-.title {
+.form input:not(.male input):hover,
+.form input:not(.male input):focus {
+  border: 1px solid rgb(0, 123, 255);
+}
+
+.form .title {
   grid-area: title;
   font-family: "Roboto";
   font-style: normal;
@@ -41,18 +71,19 @@
   color: #1c1c1c;
 }
 
-.first-name {
+.form .first-name {
   grid-area: Fname;
 }
 
-.last-name {
+.form .last-name {
   grid-area: Lname;
 }
 
-.e-mail {
+.form .e-mail {
   grid-area: emeil;
 }
-.e-mail p {
+
+.form .e-mail p {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 13px;
@@ -62,35 +93,68 @@
   margin: 7px 0px 0px 0px;
 }
 
-.male {
+.form .male {
   grid-area: male;
   display: flex;
   align-items: center;
   gap: 21px;
 }
-.male input {
-  display: inline-block;
+
+.form .male .radio {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px 0 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.male .fmale {
+
+.form .male .radio::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.form .male .radio:checked {
+  background: #007bff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form .male .radio:checked::after {
+  opacity: 1;
+}
+
+.form .male .mmale {
   display: flex;
   align-items: center;
 }
 
-.country {
+.form .male .fmale {
+  display: flex;
+  align-items: center;
+}
+
+.form .country {
   grid-area: country;
 }
 
-.city {
+.form .city {
   grid-area: city;
 }
 
-.foot {
+.form .foot {
   grid-area: foot;
   max-width: 410px;
+  padding: 0 20px;
   text-align: center;
   margin: 0px auto;
-}
-.foot p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -100,7 +164,8 @@
   letter-spacing: -0.1px;
   color: #969696;
 }
-.foot span {
+
+.form .foot span {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -109,9 +174,10 @@
   text-align: center;
   letter-spacing: -0.1px;
   color: #007bff;
+  cursor: pointer;
 }
 
-.button {
+.form .button {
   grid-area: button;
   background: #007bff;
   border: 1px solid #e4e4e4;
@@ -125,4 +191,56 @@
   text-align: center;
   letter-spacing: -0.1px;
   color: #ffffff;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.footer-text {
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 20px 0;
+}
+
+.footer-text:first-child {
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+
+.footer-text span:last-child {
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.radio:checked {
+  background: #007bff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio:checked::after {
+  opacity: 1;
+}
