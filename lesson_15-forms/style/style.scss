@@ -1,0 +1,212 @@
+.wrapper {
+  background: #e5e5e5;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-form {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+
+  padding: 35px 34px 0 36px;
+  margin: 0 auto;
+
+  max-width: 570px;
+}
+
+.form {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 20px;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "Fname Lname"
+    "emeil emeil"
+    "male male"
+    "country city"
+    "button button"
+    "foot foot";
+
+  input:not(.male input){
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    min-height: 38px;
+
+    padding: 0px 10px;
+    margin: 7px 0px 0px 0px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid rgba(0, 123, 255, 1);
+    }
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .first-name {
+    grid-area: Fname;
+
+    @extend .flex-column;
+  }
+
+  .last-name {
+    grid-area: Lname;
+
+    @extend .flex-column;
+  }
+
+  .e-mail {
+    grid-area: emeil;
+
+    @extend .flex-column;
+
+    p {
+      margin: 7px 0px 0px 0px;
+    }
+  }
+
+  .male {
+    grid-area: male;
+
+    display: flex;
+    align-items: center;
+    gap: 21px;
+
+    .radio {
+      width: 20px;
+      height: 20px;
+      margin: 0 8px 0 0;
+      border-radius: 50%;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      &::after {
+        content: "";
+        display: block;
+    
+        width: 8px;
+        height: 8px;
+    
+        opacity: 0;
+        background-color: #ffffff;
+        border-radius: 50%;
+      }
+    }
+    
+    .radio:checked {
+      background: #007bff;
+      appearance: none;
+    
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    .mmale {
+      display: flex;
+      align-items: center;
+    }
+
+    .fmale {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .country {
+    grid-area: country;
+    @extend .flex-column;
+    max-height: fit-content;
+
+    .select{
+      position: relative;
+      display:flex;
+      align-items: center;
+      margin: 7px 0px 0px 0px;
+
+      input{
+        width: 100%;
+        margin: 0;
+      }
+
+      .arrow{ 
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        gap: 3px;
+        right: 13.75px;
+
+        & svg:last-child{
+          transform: scale(-1);     
+        }
+
+        svg{
+        width: 10.5px;
+        height: 5.25px;
+        cursor: pointer;
+      }
+    }
+    }
+    select{
+      opacity: 0;
+      position: absolute;
+      top: 7px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+
+      select:hover .select input, select:focus .select input{ 
+      border: 1px solid rgba(0, 123, 255, 1); 
+      }
+    }
+  }
+
+  .city {
+    grid-area: city;
+
+    @extend .flex-column;
+  }
+
+  .foot {
+    grid-area: foot;
+
+    max-width: 410px;
+    padding: 0 20px;
+    text-align: center;
+    margin: 0px auto;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  .button {
+    grid-area: button;
+
+    background: #007bff;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    padding: 8px 0;
+  }
+}
+
+.footer-text {
+  padding: 20px 0;
+
+  & span:last-child {
+    cursor: pointer;
+    margin-left: 20px;
+  }
+}
