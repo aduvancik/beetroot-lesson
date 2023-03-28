@@ -1,0 +1,69 @@
+.wrapper{
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.form label{
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+
+.title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1c1c1c;
+}
+
+.e-mail p {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+
+.foot{
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #969696;
+
+  span{
+    font-family: "Inter";
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #007bff;
+  }
+}
+
+.button{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 15px;
+
+  &:first-child {
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: #545454;
+  }
+
+  & span:last-child {
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    color: #007bff;
+  }
+}
