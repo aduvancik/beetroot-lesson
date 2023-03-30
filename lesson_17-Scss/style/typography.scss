@@ -1,0 +1,56 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  p {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #898F8F;
+  }
+
+  h1 {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 66px;
+    color: var(--yellov-color);
+  }
+}
+
+.kabir {
+  color: #666666;
+  text-align: center;
+
+  h2 {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+  }
+
+  &__front {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+  }
+
+  &__text {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+  }
+
+  &__bth {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+}
