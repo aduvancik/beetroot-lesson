@@ -1,0 +1,51 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.title p {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #898F8F;
+}
+.title h1 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  color: var(--yellov-color);
+}
+
+.kabir {
+  color: #666666;
+  text-align: center;
+}
+.kabir h2 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: capitalize;
+}
+.kabir__front {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+.kabir__text {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+.kabir__bth {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
