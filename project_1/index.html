@@ -69,21 +69,21 @@
             </svg>
           </div>
         </div>
-        <div class="header__list">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Use Cases</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </div>
         <div class="center-wrapper">
-          <input type="checkbox" id="burger" name="burger">
+          <input type="checkbox" id="burger" name="burger" />
           <div class="center">
             <div></div>
           </div>
+        </div>
+        <div class="header__list">
+          <ul>
+            <li class="header-footer"><a href="#">Home</a></li>
+            <li class="header-footer"><a href="#">About</a></li>
+            <li class="header-footer"><a href="#">Products</a></li>
+            <li class="header-footer"><a href="#">Use Cases</a></li>
+            <li class="header-footer"><a href="#">Pricing</a></li>
+            <li class="header-footer"><a href="#">Resources</a></li>
+          </ul>
         </div>
       </header>
       <main class="main">
@@ -164,7 +164,9 @@
             </p>
           </div>
           <div class="benefists__block">
-            <h2 class="text-with-green">The best <span class="green">payments solutions</span></h2>
+            <h2 class="text-with-green">
+              The best <span class="green">payments solutions</span>
+            </h2>
             <p class="small-text">
               For all stablecoin payments, from point-of-sale transactions to
               website solutions. If you use stablecoins in your business,
@@ -216,7 +218,8 @@
             <div class="quote__text">
               <p>
                 Solis Group serves as a liquidity nexus that gives stablecoin
-                issuers, holders and exchanges certainty over access and liquidity
+                issuers, holders and exchanges certainty over access and
+                liquidity
               </p>
               <p>Lennon Burnett, Solis Group CEO</p>
             </div>
@@ -224,6 +227,9 @@
         </div>
       </div>
       <div class="video">
+        <div class="video__play">
+          <img src="./style/img/play.png" alt="play" />
+        </div>
         <div class="video__img">
           <img src="./style/img/screensaver-video.svg" alt="video" />
         </div>
@@ -246,22 +252,24 @@
         <div class="bloks-after__block block-on">
           <ul class="bloks-after__list">
             <li>
-              <h2 class="text-with-green">On-Exchange Trading</h2>
+              <h2 class="bloks-after__text">On-Exchange Trading</h2>
               <p class="small-text">
                 Instant<br />
                 Passive Inventory earns fees
               </p>
             </li>
             <li>
-              <h2 class="text-with-green">On-Chain Swaps</h2>
+              <h2 class="bloks-after__text">On-Chain Swaps</h2>
               <p class="small-text">
                 Low Counterparty risk<br />
                 Direct transfers
               </p>
             </li>
             <li>
-              <h2 class="text-with-green">Time Settlement Swaps</h2>
-              <p class="small-text">LBTC / Lightning and other sidechain swaps</p>
+              <h2 class="bloks-after__text">Time Settlement Swaps</h2>
+              <p class="small-text">
+                LBTC / Lightning and other sidechain swaps
+              </p>
             </li>
             <li class="bloks-after__list_bth">
               <div class="bloks-after-bth bth">
@@ -274,7 +282,9 @@
       </div>
       <div class="reviews">
         <div class="reviews__title">
-          <h2 class="text-with-green">Client <span class="green">reviews</span></h2>
+          <h2 class="text-with-green">
+            Client <span class="green">reviews</span>
+          </h2>
           <p class="small-text">
             Happy clients, happy us. Read our client reviews about the work
             process and results.
@@ -326,7 +336,9 @@
       <div class="contact-wrapper">
         <div class="contact">
           <div class="contact__title">
-            <h2 class="text-with-green">Contact <span class="green">our sales team</span></h2>
+            <h2 class="text-with-green">
+              Contact <span class="green">our sales team</span>
+            </h2>
             <p class="small-text">
               Our team is happy to answer your sales questions.Fill out the form
               and we’ll be in touch as soon as possible.
@@ -334,7 +346,6 @@
           </div>
           <form class="form">
             <div class="form__input">
-              <!-- <label for="name" class="form__nam">Your name</label> -->
               <input
                 type="text"
                 id="name"
@@ -344,7 +355,6 @@
               />
             </div>
             <div class="form__input">
-              <!-- <label for="email" class="form__nam">Email</label> -->
               <input
                 type="email"
                 id="email"
@@ -354,7 +364,6 @@
               />
             </div>
             <div class="form__input">
-              <!-- <label for="tel" class="form__nam">Tell more</label> -->
               <input
                 type="tel"
                 id="tel"

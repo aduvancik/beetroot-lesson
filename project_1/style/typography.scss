@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.08em;
-  color: #262a3f;
+  color: var(--gray-color);
 }
 
 .bth {
@@ -14,7 +14,11 @@
   line-height: 20px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #f1897b;
+  color: var(--pink-color);
+
+  &:hover {
+    color: var(--color-red-midl);
+  }
 }
 
 .bloks-on-main {
@@ -26,7 +30,7 @@
         font-size: 68px;
         line-height: 72px;
         text-align: center;
-        color: #262a3f;
+        color: var(--gray-color);
 
         @media screen and (max-width: 630px) {
           font-size: 35px;
@@ -42,10 +46,9 @@
 }
 
 .quote {
-
   &__text {
     font-weight: 400;
-    color: #ffffff;
+    color: var(--color-white);
 
     & p:first-child {
       font-family: "Lato";
@@ -58,6 +61,7 @@
         line-height: 33px;
       }
     }
+
     & p:last-child {
       font-family: "Playfair Display";
       font-style: italic;
@@ -70,7 +74,7 @@
 
 .reviews {
   font-weight: 400;
-  color: #ffffff;
+  color: var(--color-white);
 
   &__block {
     & p:first-child {
@@ -89,6 +93,14 @@
   }
 }
 
+.bloks-after__text {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  color: var(--gray-color);
+}
+
 .form {
   &__input {
     input::placeholder,
@@ -99,18 +111,18 @@
       font-size: 18px;
       line-height: 20px;
       letter-spacing: 0.08em;
-      color: #262a3f;
+      color: var(--gray-color);
     }
   }
 }
 .footer {
-    span {
-      font-family: "Lato";
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 26px;
-      color: #262a3f;
-    }
+  span {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--gray-color);
+  }
 }
 
 .text-with-green {
@@ -118,11 +130,11 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
-  color: #262a3f;
+  color: var(--gray-color);
 }
 
 .green {
-  color: rgba(133, 187, 177, 1);
+  color: var(--color-green);
 }
 
 .small-text {
@@ -130,5 +142,24 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262a3f;
+  color: var(--gray-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --pink-color: #53f3cd;
+    --gray-color: #262a3f;
+    --gray-color: #ffffff;
+    --color-red-midl: #02e0ab;
+    --color-black: #000;
+    --color-white-mild: #e4e4e4;
+    --color-green: rgba(104, 159, 242, 1);
+    --gradient-header: linear-gradient(
+        270deg,
+        rgba(22, 25, 38, 0.5) 0%,
+        rgba(22, 25, 38, 0) 24.1%,
+        rgba(22, 25, 38, 0) 47.19%
+      ),
+      rgba(22, 25, 38, 0.02);
+  }
 }
