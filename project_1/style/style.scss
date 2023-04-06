@@ -86,7 +86,9 @@
         margin: 7px 0;
         transition: 0.5s;
 
-        @media screen and (prefers-color-scheme: dark) {background-color: var(--color-white);}
+        @media screen and (prefers-color-scheme: dark) {
+          background-color: var(--color-white);
+        }
       }
     }
   }
@@ -142,7 +144,9 @@
       padding: 40px;
       transform: scaleY(0);
 
-      @media screen and (prefers-color-scheme: dark) {background-color: var(--blue-color-midl);}
+      @media screen and (prefers-color-scheme: dark) {
+        background-color: var(--blue-color-midl);
+      }
 
       ul {
         flex-direction: column;
@@ -159,6 +163,7 @@
   position: relative;
   width: max-content;
   background: none;
+  display: block;
 }
 
 .bth-line {
@@ -212,6 +217,12 @@
     transform: translateY(-30%);
   }
 
+  @media screen and (max-width: 601px) {
+    margin-left: 40px;
+    padding-right: 5px;
+    transform: translateY(0px);
+  }
+
   &__foto {
     min-width: 570px;
 
@@ -261,6 +272,10 @@
 
     margin-bottom: 40px;
     margin: 40px auto;
+
+    @media screen and (max-width: 964px) {
+      margin: 10px auto;
+    }
   }
 
   &__info-text {
@@ -272,9 +287,6 @@
   &__bth {
     margin-top: 50px;
 
-    @media screen and (max-width: 500px) {
-      margin-left: -100px;
-    }
   }
   @media screen and (max-width: 600px) {
     margin: 0px auto;
@@ -288,13 +300,17 @@
       text-align: center;
       margin: 20px 0px 0px 0px;
       border-top: var(--color-green) 1px solid;
-      border-radius: 5px;
+      padding-top: 5px;
     }
   }
 }
 
 .benefists {
   margin: 120px 0;
+
+  @media screen and (min-width: 601px) and (max-width: 1117px) {
+    margin-top: -100px;
+  }
 
   &__block {
     padding: 20px 35px 52px 35px;
@@ -370,41 +386,84 @@
   }
 }
 
-.video {
-  margin: 0px auto;
+.tablet-wrapper {
   padding: 0 30px;
-
-  max-width: 1030px;
-
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  &__play {
-    position: absolute;
-    justify-self: center;
-    align-self: center;
-    top: 240px;
-    left: 433px;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 0.7;
-    }
-
-    @media screen and (max-width: 1022px) {
-      display: none;
-    }
-  }
-  &__img {
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
+  margin: 0px auto;
 
   &__text {
     margin-top: 50px;
+    max-width: 897px;
+
+    & p:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+.tablet {
+  max-width: 970px;
+  padding: 31px 70px 31px 30px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 32px;
+
+  @media screen and (max-width:570px){
+    padding: 15px 53px 15px 25px;
+  }
+
+  &__camera {
+    position: absolute;
+    left: 8px;
+
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+
+    height: 13px;
+    width: 13px;
+  }
+
+  &__img {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img:first-child {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+
+    & img:last-child {
+      position: absolute;
+      cursor: pointer;
+      width: 13.7%;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 14px;
+    z-index: 2;
+
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+
+    width: 35px;
+    height: 35px;
+
+    @media screen and (max-width: 540px) {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 
@@ -434,16 +493,18 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 300px 300px;
+    width: 700px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
     gap: 70px 100px;
 
     @media screen and (max-width: 800px) {
-      grid-template-columns: minmax(250px, 300px) minmax(250px, 300px);
+      gap: 50px 80px;
     }
 
-    @media screen and (max-width: 718px) {
-      grid-template-columns: minmax(250px, 300px);
+    @media screen and (max-width: 774px) {
+      width: max-content;
       gap: 30px;
+      margin-left: -10px;
     }
 
     h2 {
@@ -453,6 +514,7 @@
     &_bth {
       padding: 40px 89px;
       border: 1px solid var(--color-white-mild);
+      cursor: pointer;
     }
   }
 
@@ -595,6 +657,9 @@
 .footer {
   padding: 0 20px;
 
+  @media screen and (max-width: 790px) {
+    padding: 25px 20px;
+  }
   &__wrapper {
     max-width: 1170px;
     min-height: 86px;
