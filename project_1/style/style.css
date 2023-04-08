@@ -448,7 +448,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 70px 100px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 910px) {
   .bloks-after__list {
     grid-template-columns: 100%;
   }

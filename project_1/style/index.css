@@ -701,7 +701,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr 1fr;
   gap: 70px 100px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 910px) {
   .bloks-after__list {
     grid-template-columns: 100%;
   }
