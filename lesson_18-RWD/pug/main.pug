@@ -1,3 +1,43 @@
-extends index.pug
-block main
-  main.main
+
+main.main
+  section.first-screen
+    +img('bg-image.jpg')
+    h1.first-screen__title
+      |Manifest is a newborn theme.
+      br
+      |Clean, simple and fast.
+  .main-wrapper
+    selection.blog
+      h2.title Blog
+      .blog__grid-container
+        .blog__item
+          +img('arrow.jpg')
+        .blog__item
+          p
+            |Technology, Interface Design
+          h2
+            |Using UX Design to Build a Sustainable Future
+          p
+            |6 May, 2020
+          p
+            |Transformation has to be driven by everybody, not just by climate groups, 
+            |and we have a responsibility to use our influence to drive this.
+        .blog__item
+          p
+            |Technology, Interface Design
+          h2
+            |Using UX Design to Build a Sustainable Future
+          p
+            |6 May, 2020
+          p
+            |Transformation has to be driven by everybody, not just by climate groups, 
+            |and we have a responsibility to use our influence to drive this.
+        .blog__item
+          +img('bg-image.jpg')
+    section.posts
+      .posts__title
+        h2 Latest Posts
+        span
+          span View All
+            +svg-arrow
+
