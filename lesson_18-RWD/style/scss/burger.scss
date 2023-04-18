@@ -1,0 +1,48 @@
+.center-wrapper {
+  width: 34px;
+  position: relative;
+  display: none;
+
+  &:has(input:checked) + .header__list {
+    transform: scaleY(1);
+  }
+
+  input {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    width: 110%;
+    height: 110%;
+    opacity: 0;
+
+    &:checked ~ .center:before {
+      transform: translateY(12px) rotate(135deg);
+    }
+
+    &:checked ~ .center:after {
+      transform: translateY(-12px) rotate(-135deg);
+    }
+
+    &:checked ~ .center div {
+      transform: scale(0);
+    }
+  }
+  .center {
+    width: 34px;
+    position: relative;
+
+    &:before,
+    &:after,
+    & div {
+      background: #000;
+      content: "";
+      display: block;
+      height: 1px;
+      border-radius: 3px;
+      margin: 10px 0;
+      transition: 0.5s;
+    }
+  }
+}

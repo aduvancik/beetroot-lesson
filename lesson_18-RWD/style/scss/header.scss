@@ -1,0 +1,73 @@
+.header {
+  @import 'burger.scss';
+
+  max-width: 100%;
+  height: 100px;
+
+  padding: 0px 135px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px){
+    padding: 23.5px 34px;
+
+    .header__wrapper{
+      gap: 81px;
+    }
+
+    .header__list {
+      display: none;
+    }
+
+    .header__list-search {
+      width: calc(20px + 34px + 40px);
+      gap: 40px;
+    }
+
+    .header__burger{
+      display: block;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__logo {
+    display:flex;
+    align-self: center;
+  }
+
+		&__list-search {
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+
+      width: 100%;
+      max-width: calc(516.13px + 84px);
+		}
+
+		&__list {
+      display:flex;
+      gap: 10px;
+      justify-content: space-between;
+
+      width: 100%;
+      max-width: 516.13px;
+
+      & li:first-child::before{
+        content: "";
+      }
+		}
+
+}
+
+
