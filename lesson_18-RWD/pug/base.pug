@@ -1,0 +1,22 @@
+block vars
+  -siteTitle = 'pug learn';
+  -lang = 'eng';
+
+doctype html
+html(lang=lang)
+  head
+    meta(charset="UTF-8" )
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title #{siteTitle}
+    link(
+      rel="shortcut icon"
+      href="https://i.pinimg.com/236x/51/88/02/5188023c05ac9d52dc422eaeca21bce4.jpg"
+      width="16px")
+    link(rel="stylesheet" href="../style/css/index.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;500;600&display=swap" rel="stylesheet")
+  body
+    .wrapper
+      block content
+    //- script(src="../script/script.js")
