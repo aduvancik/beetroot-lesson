@@ -24,46 +24,73 @@ main {
     letter-spacing: 0.05em;
     color: #000000;
   }
-  .blog {
-  
 
-    &__grid-container {
+  .text {
+    h2 {
+      font-family: var(--rhd);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 166%;
+      letter-spacing: 0.1em;
+      color: #000000;
     }
-
-    &__item {
+    & p:nth-of-type(1) {
+      font-family: var(--lato);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 166%;
+      letter-spacing: 0.1em;
+      color: #7b7b7b;
+    }
+    & p:nth-of-type(2) {
+      font-family: var(--lato);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 166%;
+      letter-spacing: 0.1em;
+      color: #7b7b7b;
+    }
+    & p:last-child {
+      font-family: var(--lato);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 166%;
+      letter-spacing: 0.05em;
+      color: #565656;
+    }
+  }
+  .posts {
+    &__title {
       h2 {
         font-family: var(--rhd);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 23px;
+        font-weight: 600;
+        font-size: 28px;
         line-height: 166%;
         letter-spacing: 0.1em;
         color: #000000;
       }
-      & p:nth-of-type(1) {
+      span {
         font-family: var(--lato);
         font-weight: 400;
         font-size: 16px;
         line-height: 166%;
         letter-spacing: 0.1em;
         color: #7b7b7b;
-      }
-      & p:nth-of-type(2) {
-        font-family: var(--lato);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: #7b7b7b;
-      }
-      & p:nth-of-type(3) {
-        font-family: var(--lato);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 166%;
-        letter-spacing: 0.05em;
-        color: #565656;
       }
     }
+
+    &__container {
+    }
+
+    &__blok {
+    }
+
+    &__text {
+    }
+  }
+  .title {
+  }
+  .text {
   }
 }

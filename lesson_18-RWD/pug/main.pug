@@ -13,31 +13,71 @@ main.main
         .blog__item
           +img('arrow.jpg')
         .blog__item
-          p
-            |Technology, Interface Design
-          h2
-            |Using UX Design to Build a Sustainable Future
-          p
-            |6 May, 2020
-          p
-            |Transformation has to be driven by everybody, not just by climate groups, 
-            |and we have a responsibility to use our influence to drive this.
+          .blog__item-wrapper.text
+            p
+              |Technology, Interface Design
+            h2
+              |Using UX Design to Build a Sustainable Future
+            p
+              |6 May, 2020
+            p
+              |Transformation has to be driven by everybody, not just by climate groups, 
+              |and we have a responsibility to use our influence to 
+              span drive this.
+                +svg-arrow
         .blog__item
-          p
-            |Technology, Interface Design
-          h2
-            |Using UX Design to Build a Sustainable Future
-          p
-            |6 May, 2020
-          p
-            |Transformation has to be driven by everybody, not just by climate groups, 
-            |and we have a responsibility to use our influence to drive this.
+          .blog__item-wrapper.text
+            p
+              |Technology, Interface Design
+            h2
+              |Using UX Design to Build a Sustainable Future
+            p
+              |6 May, 2020
+            p
+              |Transformation has to be driven by everybody, not just by climate groups, 
+              |and we have a responsibility to use our influence to 
+              span drive this.
+                +svg-arrow
         .blog__item
-          +img('bg-image.jpg')
+          +img('blog-image.jpg')
     section.posts
-      .posts__title
+      .posts__title.title
         h2 Latest Posts
         span
           span View All
             +svg-arrow
+      .posts__container
+        .posts__blok
+          +img('lampa.jpg')
+          .posts__text.text
+            p
+              span Interface Design
+              span 8 June, 2020
+            h2
+              |UX traffic light colours
+            p
+              |UI has to make a huge visual difference between warning, an alert and a success.
+        .posts__blok
+          +img('lampa.jpg')
+          .posts__text.text
+            p
+              span Interface Design
+              span 8 June, 2020
+            h2
+              |UX traffic light colours
+            p
+              |UI has to make a huge visual difference between warning, an alert and a success.
+        .posts__blok
+          +img('lampa.jpg')
+          .posts__text.text
+            p
+              span Visual Design
+              span 8 June, 2020
+            h2
+              |Creativity vs. UX
+            p
+              |UI has to make a huge visual difference between warning, an alert and a success.
+
+
+
 
