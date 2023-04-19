@@ -1,0 +1,8 @@
+.footer {
+  background-color: red;
+}
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

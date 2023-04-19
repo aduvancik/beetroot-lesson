@@ -3,32 +3,6 @@
   position: relative;
   display: none;
 
-  &:has(input:checked) + .header__list {
-    transform: scaleY(1);
-  }
-
-  input {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-
-    width: 110%;
-    height: 110%;
-    opacity: 0;
-
-    &:checked ~ .center:before {
-      transform: translateY(12px) rotate(135deg);
-    }
-
-    &:checked ~ .center:after {
-      transform: translateY(-12px) rotate(-135deg);
-    }
-
-    &:checked ~ .center div {
-      transform: scale(0);
-    }
-  }
   .center {
     width: 34px;
     position: relative;
@@ -45,4 +19,19 @@
       transition: 0.5s;
     }
   }
+}
+
+.header__burger-click {
+  & .center:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+
+  & .center:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+
+  & .center div {
+    transform: scale(0);
+  }
+
 }

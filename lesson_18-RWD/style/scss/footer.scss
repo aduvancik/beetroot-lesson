@@ -1,0 +1,95 @@
+.footer{
+
+  background: var(--color-l-white);
+  padding: 70px 135px 30px 135px;
+
+  @media screen and (max-width:964px) {
+    padding: 50px 36px 50px 36px;
+  }
+
+  @media screen and (max-width:400px) {
+    padding: 50px 34px 50px 34px;
+  }
+
+  &__wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1170px;
+    margin: 0px auto;
+  }
+
+  &__block{
+    display:flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    max-width: 1400px;
+    width: 100%;
+    
+    @media screen and (max-width:964px) {
+      justify-content: center;
+    }
+  }
+
+  &__gta{
+    max-width: 375px;
+    width: 100%;
+
+    @media screen and (max-width:964px) {
+      text-align: center;
+    }
+
+    & p:first-of-type{
+      margin: 30px 0 15px 0;
+
+      @media screen and (max-width:964px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__svg{
+    display:flex;
+    gap: 23px;
+    flex-wrap: nowrap;
+    width: max-content;
+    align-self: center;
+
+    .svg-social{
+      display:grid;
+      place-items: center;
+
+      width: 50px;
+      height: 50px;
+
+      border: 1px solid var(--color-braune);
+
+      &:hover{
+      background-color: var(--color-braune);
+      transition: all .5s ease 0s;
+        svg{
+          fill: var(--color-white);
+        }
+      }
+    }
+    svg{
+      fill: var(--color-braune);
+    }
+  }
+
+  &__copy{
+    margin-top: 25px;
+
+    @media screen and (max-width:964px) {
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: 560px) {
+      max-width: 300px;
+      
+    }
+  }
+}

@@ -16,14 +16,15 @@ main {
     letter-spacing: 0.05em;
     color: var(--color-black);
 
-    @media screen and (max-width:887px){
+    @media screen and (max-width: 887px) {
       font-size: 30px;
-      line-height: 50px;    
-  }
+      line-height: 50px;
+    }
 
-    @media screen and (max-width:484px){
+    @media screen and (max-width: 484px) {
       font-size: 30px;
-      line-height: 50px;    }
+      line-height: 50px;
+    }
   }
 
   .blog {
@@ -35,6 +36,7 @@ main {
       letter-spacing: 0.05em;
       color: var(--color-black);
     }
+
     &__item-wrapper {
       h2 {
         font-family: var(--rhd);
@@ -44,7 +46,12 @@ main {
         line-height: 166%;
         letter-spacing: 0.1em;
         color: var(--color-black);
+
+        @media screen and (max-width: 484px) {
+          font-size: 22px;
+        }
       }
+
       & p:nth-of-type(1) {
         font-family: var(--lato);
         font-weight: 400;
@@ -53,6 +60,7 @@ main {
         letter-spacing: 0.1em;
         color: #7b7b7b;
       }
+
       & p:nth-of-type(2) {
         font-family: var(--lato);
         font-weight: 400;
@@ -61,6 +69,7 @@ main {
         letter-spacing: 0.1em;
         color: #7b7b7b;
       }
+
       & p:last-child {
         font-family: var(--lato);
         font-weight: 400;
@@ -71,6 +80,7 @@ main {
       }
     }
   }
+
   .posts,
   .popular {
     &__title {
@@ -82,6 +92,7 @@ main {
         letter-spacing: 0.1em;
         color: var(--color-black);
       }
+
       span {
         font-family: var(--lato);
         font-weight: 400;
@@ -100,6 +111,7 @@ main {
         line-height: 166%;
         letter-spacing: 0.1em;
         color: var(--color-black);
+        
       }
 
       & p:nth-of-type(1) {
@@ -181,21 +193,20 @@ main {
     color: var(--color-black);
   }
 
-    @media screen and (max-width: 560px) {
-      h2 {
-        font-size: 32px;
-        line-height: 42px;
-      }
-
-      p {
-        font-size: 18px;
-      }
+  @media screen and (max-width: 560px) {
+    h2 {
+      font-size: 32px;
+      line-height: 42px;
     }
 
-    &__copy {
-      font-size: 16px;
-      line-height: 166%;
-      text-align: center;
+    p {
+      font-size: 18px;
     }
-  
+  }
+
+  &__copy {
+    font-size: 16px;
+    line-height: 166%;
+    text-align: center;
+  }
 }
