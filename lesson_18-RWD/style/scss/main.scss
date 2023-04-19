@@ -2,9 +2,12 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width:484px){
+    height: 500px;
+  }
   img {
     width: 100%;
-    // height: auto;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -13,53 +16,84 @@
     z-index: 1;
     top: 16.67%;
     left: 135px;
+
+    @media screen and (max-width:887px){
+      left: 34px;
+      top:30px;
+    }
+
+    @media screen and (max-width:484px){
+      left: 10px;
+      top:70px;
+    }
   }
 }
 .main {
+  flex: 1 1 auto;
+
   .title {
     margin-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @media screen and (max-width:400px){
+      flex-direction: column;
+    }
   }
 
   .main-wrapper {
     padding: 90px 34px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 90px;
+
+    @media screen and (max-width:400px){
+      padding: 70px 10px;
+    }
+  }
+
+  .svg-arrow{
+    margin-left: 20px;
   }
 
   .blog {
-    // width: max-content;
     &__grid-container {
       margin: 0px auto;
       width: 100%;
       max-width: 1170px;
+      overflow: hidden;
 
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 50px 30px;
-      // grid-template-rows: repeat(2, 1fr);
-      overflow: hidden;
+
+      @media screen and (max-width:400px){
+        grid-template-columns: 1fr;
+      }
     }
     &__item-wrapper {
       align-self: center;
+
       height: max-content;
       max-width: 450px;
     }
     &__item {
       display: flex;
+
       img {
         width: 100%;
-        max-width: 100%;
-        height: auto;
+        // max-width: 100%;
+        // height: auto;
         object-fit: cover;
       }
 
       h2 {
         margin: 30px 0 15px 0;
-      }
-
-      & p:nth-of-type(1) {
       }
 
       & p:nth-of-type(3) {
@@ -71,38 +105,118 @@
       }
     }
   }
+
   .posts {
     width: 100%;
     max-width: 1170px;
 
-		&__title {
-      display:flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-		}
-
-		&__container {
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px ,370px));
-      grid-auto-rows: max-content;
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-      // justify-content: center;
-		}
 
-		&__blok {
-      max-width: 370px;
-      // max-height: 260px;
-      
-      display:flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-		}
+      @media screen and (max-width:400px){
+        grid-template-columns: 1fr;
+      }
+    }
 
-		&__text {
-      width: 370px;
-		}
+    &__blok {
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        // height: auto;
+      }
+    }
+
+    &__text {
+      // max-width: 370px;
+
+      h2 {
+        margin: 25.69px 0 20px 0;
+      }
+
+      & p:nth-of-type(1) {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 25px;
+      }
+    }
+  }
+  .popular {
+    width: 100%;
+    max-width: 1170px;
+
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      @media screen and (max-width:400px){
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__blok {
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text {
+
+      h2 {
+        margin: 20px 0 20px 0;
+      }
+
+      & p:nth-of-type(1) {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 20px;
+      }
+    }
+
+    .popular__button{
+      margin: 50px auto 0px auto;
+      padding: 0 45px; 
+
+      background: #565656;
+
+      height: 46px;
+      width: max-content;
+
+      display:grid;
+      place-items: center;
+    }
+  }
+
+  .info{
+    max-width: 1170px;
+    width: 100%;
+
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  
+
+  p{
+    max-width: 470px;
+  }
+
+  & p:first-child{
+
+  }
+
+  & p:last-child{
+    float: right;
+  }
+  .svg-arrow{
+    margin: 0;
+  }
 }
-.text {
-}
-
 }

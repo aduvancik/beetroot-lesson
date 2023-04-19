@@ -34,8 +34,7 @@
   height: 80px;
   width: 100vw;
   background: var(--gradient-header);
-  -webkit-backdrop-filter: blur(4.5px);
-          backdrop-filter: blur(4.5px);
+  backdrop-filter: blur(4.5px);
 }
 .header .center-wrapper {
   width: 50px;
@@ -147,7 +146,6 @@
 
 .bth {
   position: relative;
-  width: -moz-max-content;
   width: max-content;
   background: none;
   display: block;
@@ -215,8 +213,7 @@
 .bloks-on-main__foto img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .bloks-on-main__block {
   max-width: 770px;
@@ -389,8 +386,7 @@
   align-items: center;
 }
 .tablet__img img:first-child {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -443,7 +439,6 @@
 }
 .bloks-after__list {
   display: grid;
-  width: -moz-max-content;
   width: max-content;
   grid-template-columns: 1fr 1fr;
   gap: 70px 100px;
@@ -472,8 +467,7 @@
 .bloks-after__foto img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 800px) {
   .bloks-after {
@@ -506,8 +500,7 @@
 }
 .reviews__blocks img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media only screen and (max-width: 430px) {
   .reviews__blocks img {

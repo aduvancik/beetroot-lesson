@@ -87,16 +87,6 @@
   color: var(--gray-color);
 }
 
-.form__input input::-moz-placeholder {
-  font-family: "Playfair Display";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
-  color: var(--gray-color);
-}
-
 .form__input input::placeholder,
 .form__input input {
   font-family: "Playfair Display";

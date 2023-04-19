@@ -221,9 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .form .male .radio:checked {
   background: #007bff;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .form .male .radio:checked::after {
   opacity: 1;
@@ -238,7 +236,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .form .country {
   grid-area: country;
-  max-height: -moz-fit-content;
   max-height: fit-content;
 }
 .form .country .select {

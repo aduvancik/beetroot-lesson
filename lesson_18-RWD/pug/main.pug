@@ -8,12 +8,12 @@ main.main
       |Clean, simple and fast.
   .main-wrapper
     selection.blog
-      h2.title Blog
+      h2.blog__title.title Blog
       .blog__grid-container
         .blog__item
           +img('arrow.jpg')
         .blog__item
-          .blog__item-wrapper.text
+          .blog__item-wrapper
             p
               |Technology, Interface Design
             h2
@@ -26,7 +26,7 @@ main.main
               span drive this.
                 +svg-arrow
         .blog__item
-          .blog__item-wrapper.text
+          .blog__item-wrapper
             p
               |Technology, Interface Design
             h2
@@ -44,12 +44,12 @@ main.main
       .posts__title.title
         h2 Latest Posts
         span
-          span View All
+            |View All
             +svg-arrow
       .posts__container
         .posts__blok
           +img('lampa.jpg')
-          .posts__text.text
+          .posts__text
             p
               span Interface Design
               span 8 June, 2020
@@ -58,8 +58,8 @@ main.main
             p
               |UI has to make a huge visual difference between warning, an alert and a success.
         .posts__blok
-          +img('lampa.jpg')
-          .posts__text.text
+          +img('arrow-small.jpg')
+          .posts__text
             p
               span Interface Design
               span 8 June, 2020
@@ -68,15 +68,54 @@ main.main
             p
               |UI has to make a huge visual difference between warning, an alert and a success.
         .posts__blok
-          +img('lampa.jpg')
-          .posts__text.text
+          +img('home.jpg')
+          .posts__text
             p
               span Visual Design
               span 8 June, 2020
             h2
               |Creativity vs. UX
             p
-              |UI has to make a huge visual difference between warning, an alert and a success.
+              |Is it possible to create a delightful user experience without following best UX practices?
+    section.popular        
+      .popular__title.title
+        h2 Latest Posts
+        span
+          |View All
+          +svg-arrow
+      .popular__container
+        .popular__blok
+          +img('lampa-yellow.jpg')
+          .popular__text
+            p
+              span Interface Design
+              span 8 June, 2020
+            h2
+              |Mentorship Match — How a simple LinkedIn feature can boost diversity
+            p
+              |LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand
+        .popular__blok
+          +img('arrow-right.jpg')
+          .popular__text
+            p
+              span Visual Design
+              span 8 June, 2020
+            h2
+              |Creativity vs. UX
+            p
+              |Is it possible to create a delightful user experience without following best UX practices?
+      a(href="#").popular__button Load More
+    section.info
+      p
+        |Full-time UI/UX designer
+        |Head of Design at VeronaLabs.com
+        br
+        +svg-arrow
+      p
+        |We work with clients around the world from our headquarters in Charleston, South Carolina.
+        br
+        br
+        |We focus on naming, branding, brand narratives, website design and development, and brand experiences.
 
 
 

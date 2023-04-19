@@ -132,7 +132,6 @@
 .kabir__bth {
   border: 1px var(--yellov-color) solid;
   padding: 5px 10px;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   cursor: pointer;
 }

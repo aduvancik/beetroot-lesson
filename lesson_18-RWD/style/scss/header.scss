@@ -31,6 +31,10 @@
     }
   }
 
+  @media screen and (max-width:400px){
+    padding: 0 10px;
+  }
+
   &__wrapper {
     width: 100%;
 

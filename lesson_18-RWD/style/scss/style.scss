@@ -1,2 +1,9 @@
-@import 'header.scss';
-@import 'main.scss';
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @import "header.scss";
+  @import "main.scss";
+  @import "footer.scss";
+
+}

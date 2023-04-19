@@ -76,9 +76,7 @@
 }
 .form .male .radio:checked {
   background: #007bff;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .form .male .radio:checked::after {
   opacity: 1;
@@ -93,7 +91,6 @@
 }
 .form .country {
   grid-area: country;
-  max-height: -moz-fit-content;
   max-height: fit-content;
 }
 .form .country .select {
