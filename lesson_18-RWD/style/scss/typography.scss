@@ -40,7 +40,6 @@ main {
     &__item-wrapper {
       h2 {
         font-family: var(--rhd);
-        font-style: normal;
         font-weight: 500;
         font-size: 23px;
         line-height: 166%;
@@ -52,16 +51,7 @@ main {
         }
       }
 
-      & p:nth-of-type(1) {
-        font-family: var(--lato);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 166%;
-        letter-spacing: 0.1em;
-        color: #7b7b7b;
-      }
-
-      & p:nth-of-type(2) {
+      & p:nth-of-type(1), & p:nth-of-type(2) {
         font-family: var(--lato);
         font-weight: 400;
         font-size: 16px;
@@ -83,7 +73,9 @@ main {
 
   .posts,
   .popular {
+
     &__title {
+
       h2 {
         font-family: var(--rhd);
         font-weight: 600;
@@ -104,6 +96,7 @@ main {
     }
 
     &__text {
+
       h2 {
         font-family: var(--rhd);
         font-weight: 500;
@@ -111,7 +104,7 @@ main {
         line-height: 166%;
         letter-spacing: 0.1em;
         color: var(--color-black);
-        
+
       }
 
       & p:nth-of-type(1) {
@@ -202,11 +195,12 @@ main {
     p {
       font-size: 18px;
     }
-  }
+  
 
   &__copy {
     font-size: 16px;
     line-height: 166%;
     text-align: center;
   }
+}
 }
