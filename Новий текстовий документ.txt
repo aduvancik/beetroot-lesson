@@ -1,0 +1,21 @@
+Math.floor(3.9)
+3
+Math.ceil(1.1)
+2
+Math.round(3.4)
+3
+Math.trunc(4.999)
+4
+4.123456.toFixed(3)
+'4.123'
+Math.max(1,5,7,9633,34,64,3)
+9633
+(text[0].toLowerCase() + text.slice(1).toUpperCase()).trim();
+'CNHJQRF HELLO'
+
+string, number, boolean, null, undefined, symbol, bigint
+
+shift
+splice
+slice
+pop
