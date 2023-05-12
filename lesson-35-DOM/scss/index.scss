@@ -1,0 +1,65 @@
+@import "null.scss";
+
+button {
+  padding: 10px;
+}
+
+.modal-window {
+  background-color: #555;
+  padding: 50px 20px;
+  border: 5px solid #000;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  
+  display: none;
+}
+
+.modal-window-open {
+  display: block;
+}
+
+.traffic-lights {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+
+  width: max-content;
+
+  &__container {
+    border: 1px black solid;
+
+    display:flex;
+    flex-direction: column;
+
+    width: 60px;
+    padding: 5px;
+
+    & li {
+      border-radius: 50%;
+      border: 1px black solid;
+
+      width: 50px;
+      height: 50px;
+      opacity: 0.5;
+
+      &:first-child {
+        background-color: red;
+      }
+
+      &:nth-child(2){
+        background-color: yellow;
+      }
+
+      &:last-child{
+        background-color: green;
+      }
+    }
+
+  }
+
+  .showColor {
+    opacity: 1;
+  }
+}

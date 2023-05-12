@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+button {
+  padding: 10px;
+}
+
+.modal-window {
+  background-color: #555;
+  padding: 50px 20px;
+  border: 5px solid #000;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+
+.modal-window-open {
+  display: block;
+}
+
+.traffic-lights {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.traffic-lights__container {
+  border: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60px;
+  padding: 5px;
+}
+.traffic-lights__container li {
+  border-radius: 50%;
+  border: 1px black solid;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+.traffic-lights__container li:first-child {
+  background-color: red;
+}
+.traffic-lights__container li:nth-child(2) {
+  background-color: yellow;
+}
+.traffic-lights__container li:last-child {
+  background-color: green;
+}
+.traffic-lights .showColor {
+  opacity: 1;
+}
