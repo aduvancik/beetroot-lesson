@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  padding: 0 100px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    li {
+      padding: 28px 15px;
+
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000;
+    }
+
+    &_item {
+      background: #f16a50;
+      color: #ffffff;
+    }
+  }
+
+  &__icons-panel {
+    display: flex;
+    gap: 30px;
+  }
+}
+
