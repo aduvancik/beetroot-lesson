@@ -1,0 +1,99 @@
+h2 {
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--brown-light);
+}
+
+.header li {
+  font-family: var(--montserrat);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button {
+  font-family: var(--montserrat);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.products__status {
+  font-family: var(--montserrat);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.products__info {
+  & p:first-child {
+    margin: 18px 0px 10px 0px;
+
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--black);
+  }
+
+  & p:last-child {
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--black);
+  }
+}
+
+.footer {
+  h2 {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--brown-light);
+  }
+
+  &__copy {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--brown-light);
+    text-align: center;
+  }
+
+  &__number {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--brown-light);
+  }
+
+  &__list li {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--brown-light);
+  }
+}

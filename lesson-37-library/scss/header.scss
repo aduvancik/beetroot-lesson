@@ -14,23 +14,23 @@
 
     li {
       padding: 28px 15px;
-
-      font-family: "Montserrat";
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 24px;
-      color: #000;
+      transition: all 0.5s ease 0s;
     }
 
-    &_item {
-      background: #f16a50;
-      color: #ffffff;
+    &_item,
+    li:hover {
+      background: var(--tomato-light);
+      color: var(--white);
     }
   }
 
   &__icons-panel {
     display: flex;
     gap: 30px;
+
+    & svg:hover {
+      transition: all 1s ease 0s;
+      transform: scale(1.1);
+    }
   }
 }
-

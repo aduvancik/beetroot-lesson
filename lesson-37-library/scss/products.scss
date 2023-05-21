@@ -1,0 +1,80 @@
+.products {
+  padding: 70px 44px;
+  width: 90%;
+
+  h2 {
+    margin: 0px 0px 50px 0px;
+  }
+
+  .swiper-wrapper {
+    padding: 0 30px;
+  }
+
+  .swiper-slide {
+    border: 1px solid var(--brown-light);
+    height: 437px;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+  &__button {
+    margin: 40px auto;
+    padding: 14px 57px;
+
+    border: 2px solid var(--black);
+    width: max-content;
+    transition: all 0.5s ease 0s;
+
+    &:hover {
+      background-color: var(--tomato-light);
+      border: 2px solid var(--tomato-light);
+
+      color: var(--white);
+    }
+  }
+
+  &__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 20px;
+
+    background: var(--tomato-light);
+  }
+
+  &__card {
+    padding: 0 20px 10px 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__info {
+    & p:first-child {
+      margin: 18px 0px 10px 0px;
+    }
+  }
+}
+.swiper-button-next {
+  transform: scaleX(-1);
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  fill: var(--arrow-inactive);
+  transition: all 0.5s ease 0s;
+}
+.swiper-button-prev svg:hover,
+.swiper-button-next svg:hover {
+  fill: var(--tomato-light) 0;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
