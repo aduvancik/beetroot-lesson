@@ -5,6 +5,11 @@ h2 {
   line-height: 39px;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+  font-size: 20px;
+  line-height: 24px;
+  }
 }
 
 h1 {
@@ -15,6 +20,11 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: var(--brown-light);
+
+  @media screen and (max-width: 768px) {
+    font-size: 26px;
+    line-height: 32px;
+    }
 }
 
 .header li {
@@ -22,6 +32,11 @@ h1 {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    }
 }
 
 .button {
@@ -31,6 +46,11 @@ h1 {
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    }
 }
 .products__status {
   font-family: var(--montserrat);
@@ -70,6 +90,12 @@ h1 {
     font-size: 26px;
     line-height: 32px;
     color: var(--brown-light);
+    text-align: start;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+      }
   }
 
   &__copy {
@@ -79,6 +105,11 @@ h1 {
     line-height: 17px;
     color: var(--brown-light);
     text-align: center;
+
+    @media screen and (max-width: 320px) {
+      font-size: 12px;
+      line-height: 15px;
+      }
   }
 
   &__number {
@@ -87,6 +118,11 @@ h1 {
     font-size: 26px;
     line-height: 32px;
     color: var(--brown-light);
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+      }
   }
 
   &__list li {
@@ -95,5 +131,10 @@ h1 {
     font-size: 20px;
     line-height: 24px;
     color: var(--brown-light);
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+      }
   }
 }

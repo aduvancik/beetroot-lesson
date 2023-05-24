@@ -1,6 +1,6 @@
 .products {
-  padding: 70px 44px;
-  width: 90%;
+  padding: 70px 0;
+  width: 100%;
 
   h2 {
     margin: 0px 0px 50px 0px;
@@ -8,13 +8,14 @@
 
   .swiper-wrapper {
     padding: 0 30px;
+    max-width: 80%;
   }
 
   .swiper-slide {
     border: 1px solid var(--brown-light);
-    height: 437px;
     cursor: pointer;
     transition: all 1s ease 0s;
+    padding-bottom:20px ;
 
     &:hover {
       transform: scale(1.01);
@@ -60,6 +61,16 @@
       margin: 18px 0px 10px 0px;
     }
   }
+  .swiper-button-prev{
+  position: absolute;
+  left: 40px;
+  top: 40%;
+}
+.swiper-button-next{
+  position: absolute;
+  right: 20px;
+  top: 40%;
+}
 }
 .swiper-button-next {
   transform: scaleX(-1);
@@ -77,4 +88,19 @@
 .swiper-button-prev:after,
 .swiper-button-next:after {
   display: none;
+}
+
+.products-pagination {
+  display:flex;
+  justify-content: center;
+  
+  .swiper-pagination-bullet {
+  background: #CAC2BA;
+}
+.swiper-pagination-bullet-active {
+  background: #F16A50;
+}
+@media screen and (min-width: 540px){
+  display: none;
+}
 }
