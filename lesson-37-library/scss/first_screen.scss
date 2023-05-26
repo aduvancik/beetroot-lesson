@@ -9,15 +9,16 @@
 }
 .image-slider {
   position: relative;
+
   &__content {
-    z-index: 2;
     position: absolute;
+    z-index: 2;
     top: 120px;
     right: 100px;
 
     max-width: 500px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) { //чомусь якщо я замість (max-width: 768px) ставлю (max-width: var(--screen-size-large:)) то не працю
       top: 60px;
       right: 82px;
     }
@@ -46,14 +47,15 @@
       border: 2px solid var(--tomato-light);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: var(--screen-size-large)) {
       margin: 20px auto;
 
       width: 154px;
       height: 40px;
     }
   }
-  @media screen and (max-width: 500px) {
+
+  @media screen and (max-width: var(--screen-size-medium)) {
     height: 384px;
   }
 }
@@ -66,20 +68,23 @@
     position: relative;
     object-fit: cover;
     height: 100%;
-    width: 100%;
+    // width: 100%;
 
     img {
       height: 100%;
 
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 768px) {
         width: 100%;
       }
+
+      
     }
   }
 }
 
 .swiper-pagination {
   position: absolute;
+
   display: flex;
   justify-content: center;
   gap: 30px;

@@ -89,6 +89,9 @@ h1, h2, h3, h4, h5, h6 {
   --white: #fff;
   --gradiente: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
   --montserrat: Montserrat;
+  --screen-size-large: 768px;
+  --screen-size-medium: 500px;
+  --screen-size-small: 328px;
 }
 
 :root {
@@ -415,7 +418,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: var(--screen-size-large)) {
   h2 {
     font-size: 20px;
     line-height: 24px;
@@ -431,7 +434,7 @@ h1 {
   text-transform: uppercase;
   color: var(--brown-light);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: var(--screen-size-large)) {
   h1 {
     font-size: 26px;
     line-height: 32px;
@@ -444,7 +447,7 @@ h1 {
   font-size: 20px;
   line-height: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: var(--screen-size-large)) {
   .header li {
     font-size: 16px;
     line-height: 20px;
@@ -459,7 +462,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: var(--screen-size-large)) {
   .button {
     font-size: 16px;
     line-height: 20px;
@@ -501,7 +504,7 @@ h1 {
   color: var(--brown-light);
   text-align: start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: var(--screen-size-large)) {
   .footer h2 {
     font-size: 20px;
     line-height: 24px;
@@ -687,7 +690,7 @@ h1 {
     height: 27px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: var(--screen-size-medium)) {
   .header__icons-panel {
     gap: 17px;
   }
@@ -709,8 +712,8 @@ h1 {
   position: relative;
 }
 .image-slider__content {
-  z-index: 2;
   position: absolute;
+  z-index: 2;
   top: 120px;
   right: 100px;
   max-width: 500px;
@@ -749,14 +752,14 @@ h1 {
   background: var(--tomato-light);
   border: 2px solid var(--tomato-light);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: var(--screen-size-large)) {
   .image-slider__button {
     margin: 20px auto;
     width: 154px;
     height: 40px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: var(--screen-size-medium)) {
   .image-slider {
     height: 384px;
   }
@@ -771,12 +774,11 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
-  width: 100%;
 }
 .image-clider__image img {
   height: 100%;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .image-clider__image img {
     width: 100%;
   }
@@ -833,6 +835,9 @@ h1 {
 .products .swiper-slide:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+.products .swiper-slide-active {
+  border: 1px solid var(--tomato-light);
 }
 .products__button {
   margin: 40px auto;
@@ -975,12 +980,12 @@ h1 {
   padding: 70px 130px 20px 130px;
   max-height: 350px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: --screen-size-large) {
   .footer {
     padding: 50px 50px 20px 23px;
   }
 }
-@media screen and (max-width: 558px) {
+@media screen and (max-width: 615px) {
   .footer {
     padding: 121px 15px 20px 15px;
   }
@@ -992,8 +997,9 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: --screen-size-large) {
   .footer__container {
     gap: 50px;
   }
@@ -1008,7 +1014,7 @@ h1 {
           flex-direction: column;
   gap: 35px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: --screen-size-large) {
   .footer__list-logo {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1048,7 +1054,7 @@ h1 {
   max-width: 331px;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: --screen-size-large) {
   .footer__contacts {
     max-width: 212px;
     width: 100%;
@@ -1084,7 +1090,7 @@ h1 {
 .footer__copy {
   margin-top: 54px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: --screen-size-large) {
   .footer__copy {
     margin-top: 40px;
   }

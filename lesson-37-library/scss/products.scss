@@ -21,6 +21,10 @@
       transform: scale(1.01);
     }
   }
+
+  .swiper-slide-active {
+    border: 1px solid var(--tomato-light);
+  }
   &__button {
     margin: 40px auto;
     padding: 14px 57px;

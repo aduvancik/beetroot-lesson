@@ -6,7 +6,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: var(--screen-size-large)) {
   font-size: 20px;
   line-height: 24px;
   }
@@ -21,7 +21,7 @@ h1 {
   text-transform: uppercase;
   color: var(--brown-light);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: var(--screen-size-large)) {
     font-size: 26px;
     line-height: 32px;
     }
@@ -33,7 +33,7 @@ h1 {
   font-size: 20px;
   line-height: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: var(--screen-size-large)) {
     font-size: 16px;
     line-height: 20px;
     }
@@ -47,7 +47,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: var(--screen-size-large)) {
     font-size: 16px;
     line-height: 20px;
     }
@@ -92,7 +92,7 @@ h1 {
     color: var(--brown-light);
     text-align: start;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: var(--screen-size-large)) {
       font-size: 20px;
       line-height: 24px;
       }

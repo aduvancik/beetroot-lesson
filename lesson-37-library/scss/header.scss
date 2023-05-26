@@ -121,7 +121,7 @@
       }
     }
   
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: var(--screen-size-medium)) {
       gap: 17px;
 
       svg {
